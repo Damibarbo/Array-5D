@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -24,6 +25,11 @@ public class ThirdActivity extends AppCompatActivity {
         film.setText(nome);
         poster.setImageResource(immagine);
 
+        }
+
+    public void indietro(View v){
+        Intent i2 = new Intent(getApplicationContext(),SecondActivity.class);
+        startActivity(i2);
     }
 }
 

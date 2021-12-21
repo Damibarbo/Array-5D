@@ -10,7 +10,6 @@ import android.widget.Button;
 import android.widget.ListView;
 
 
-
 public class MainActivity extends AppCompatActivity {
     Button b;
 
@@ -19,11 +18,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         b=(Button)findViewById(R.id.pulsante);
-
     }
 
     public void lanciaSelect(View v){
-
         Intent i = new Intent(getApplicationContext(),SecondActivity.class);
         startActivity(i);
     }
